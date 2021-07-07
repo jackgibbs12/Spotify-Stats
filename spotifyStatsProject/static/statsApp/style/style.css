@@ -1,0 +1,18 @@
+*{background-color:black;
+color:white;}
+
+.singleCover{
+    width:200px;
+}
+
+table{
+    width:100%;
+}
+
+#pageTitle{
+    font-size:30px;
+
+    position:relative;
+    text-align: center;
+
+}

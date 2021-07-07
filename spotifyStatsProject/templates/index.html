@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'statsApp/style/style.css' %}">
+    <title>Spotify Stats</title>
+</head>
+
+<body>
+
+    <h1 id="pageTitle">My Most Streamed Tracks</h1>
+    <form  method="post" action="">
+        <input type="radio" id="short" name="time" value="short_term">
+        <label for="short">Short Term</label>
+        <input type="radio" id="medium" name="time" value="medium_term">
+        <label for="medium">Medium Term</label>
+        <input type="radio" id="long" name="time" value="long_term">
+        <label for="long">Long Term</label>
+        <input type="submit" value="Apply">
+    </form>
+
+    <table>
+        <tr>
+        {%for track in tracks %}
+
+            <td>
+                <a href="{{ track.3 }}" target="_blank">
+                    <img src="{{ track.4 }}" class="singleCover">
+                </a>
+            </td>
+
+            <td>
+                <b>
+                    <p style="font-size:16px;">{{ forloop.counter }}. {{track.0}} </p>
+                </b>
+                <p>{{ track.2 }}</p>
+            </td>
+
+
+            {% if forloop.counter|divisibleby:3 %}
+                </tr><tr>
+            {% endif %}
+
+        {% endfor %}
+
+    </table>
+
+</body>
