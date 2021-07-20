@@ -8,15 +8,17 @@
 
 <body>
 
-    <h1 id="pageTitle">My Most Streamed Tracks</h1>
+    <h1 id="pageTitle">My Spotify Overview</h1>
+    <p id="pageDesc">These are the top tracks you play most on Spotify!</p>
     <form  method="post" action="">
-        <input type="radio" id="short" name="time" value="short_term">
+
+        <input type="radio" id="short" name="time" value="short_term" {%if time == "short_term" %} checked {%endif%}>
         <label for="short">Short Term</label>
-        <input type="radio" id="medium" name="time" value="medium_term">
+        <input type="radio" id="medium" name="time" value="medium_term" {%if time == "medium_term" %} checked {%endif%}>
         <label for="medium">Medium Term</label>
-        <input type="radio" id="long" name="time" value="long_term">
+        <input type="radio" id="long" name="time" value="long_term" {%if time == "long_term" %} checked {%endif%}>
         <label for="long">Long Term</label>
-        <input type="submit" value="Apply">
+        <input type="submit" value="Update">
     </form>
 
     <table>

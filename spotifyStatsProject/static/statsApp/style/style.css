@@ -1,5 +1,8 @@
-*{background-color:black;
-color:white;}
+*{
+    background-color:black;
+    color:white;
+    font-family: Arial;
+}
 
 .singleCover{
     width:200px;
@@ -7,12 +10,25 @@ color:white;}
 
 table{
     width:100%;
+    table-layout: fixed;
 }
 
 #pageTitle{
-    font-size:30px;
-
+    font-size:40px;
+    font-family: Arial;
     position:relative;
     text-align: center;
+}
 
+#pageDesc{
+    font-size:20px;
+    font-family: Arial;
+    position:relative;
+    text-align: center;
+}
+
+form{
+    position:relative;
+    text-align: center;
+    margin-bottom: 30px;
 }
