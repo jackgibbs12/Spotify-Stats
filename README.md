@@ -31,3 +31,7 @@ The web app will then be accessible at the following location: http://127.0.0.1:
 ## My Motivation:
 
 Two of my passions are programming and music, thus this project provided an amalgamation of both interests. This project gave me hands on experience working with an API, as well as practice designing and developing web apps. 
+
+## Web App Preview:
+
+![Alt text](img/web-app-screenshot.png "Title")
